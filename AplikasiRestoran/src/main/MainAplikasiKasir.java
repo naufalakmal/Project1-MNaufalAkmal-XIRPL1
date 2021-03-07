@@ -22,9 +22,18 @@ public class MainAplikasiKasir {
   
     public DaftarMenu daftarMenu;
     
+    public static double PAJAK_PPH = 0.10;
+    public static double BIAYA_SERVICE = 0.05;
+    
     public static void main(String[] args) {
         // Inisialisasi kelas Scanner untuk mengambil input dari keyboard
         Scanner input = new Scanner(System.in);
+        
+        // Tambahan
+        String no_transaksi, nama_pemesan, tanggal, no_meja = "";
+        String transaksi_lagi = "", pesan_lagi = "", keterangan = "", makan_ditempat;
+        int jumlah_pesanan, no_menu;
+        // end of tambahkan
         
         MainAplikasiKasir app = new MainAplikasiKasir();
         // tampilkan daftar Menu
